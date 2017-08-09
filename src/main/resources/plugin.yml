@@ -1,0 +1,19 @@
+name: ClearRegion
+version: 1.0.0
+description: Clear all blocks in a world guard region
+author: killazombiecow
+
+main: me.imsean.clearregion.ClearRegion
+database: false
+depend: [WorldGuard]
+
+commands:
+  clearregion:
+    description: Clear a region
+    usage: /clearregion [region] [world]
+    permission: region.set
+
+permissions:
+  region.set:
+    description: Allow access to clear blocks in a region
+    default: op
