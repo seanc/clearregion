@@ -39,8 +39,8 @@ public class ClearRegionCommand implements CommandExecutor {
                 ProtectedRegion region = regions.getRegion(regionName);
 
                 if (region != null) {
-                    for (int x = region.getMinimumPoint().getBlockX(); x <= region.getMaximumPoint().getBlockX() + 1; x++) {
-                        for (int z = region.getMinimumPoint().getBlockZ(); z <= region.getMaximumPoint().getBlockZ() + 1; z++) {
+                    for (int x = region.getMinimumPoint().getBlockX(); x <= region.getMaximumPoint().getBlockX(); x++) {
+                        for (int z = region.getMinimumPoint().getBlockZ(); z <= region.getMaximumPoint().getBlockZ(); z++) {
                             for (int y = region.getMinimumPoint().getBlockY(); y <= region.getMaximumPoint().getBlockY(); y++) {
                                 Location loc = new Location(regionWorld, x, y, z);
 
